@@ -6,16 +6,75 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Movie Archive</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Main Menu</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+		<link href="http://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+		<style>
+		body {
+			font-family: 'Poppins', sans-serif;
+			background: #191919;
+		}
+		
+		.menubox {
+			width: 300px;
+			padding: 10px 40px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: #191919;
+			text-align: center;
+		}
+
+		.menubox h1 {
+			margin-left: 15px;
+			color: white;
+			font-size: x-large;
+			text-transform: uppercase;
+			font-weight: 500;
+			letter-spacing: 5px;
+		}
+		
+		ul {
+			list-style-type:none;
+			padding: 0 0 0 5px; 
+		}
+		
+		li {
+			display: flex;
+			align-self: center;
+		}
+		
+		a { 
+			color: white; 
+			font-weight: 300; 
+			letter-spacing: 2px; 
+			text-decoration: none; 
+			background: #595959; 
+			padding: 20px 5px; 
+			display: inline-block; 
+			width: 100%; 
+			text-align: center; 
+		}
+
+		a:hover { 
+			background: #cecece; 
+		}
+		</style>
     </head>
+    
     <body>
-        <h1>Movie Archive</h1>
-        <a href="ShowMovies.jsp">Display All Movies</a><br>
-        <a href="CreateMovie.jsp">Create a Movie</a><br>
-        <a href="SearchMovie.jsp">Search and Display a Movie</a><br>
-        <a href="DeleteMovie.jsp">Delete a Movie</a><br>
-        <a href="UpdateMovie.jsp">Edit Movie</a><br>
+		<div class="menubox">
+			<h1>MOVIE ARCHIVE</h1>
+			<ul>
+				<li><a href="ShowMovies.jsp">Display movies </a></li>
+				<li><a href="CreateMovie.jsp">Add movie </a></li>
+				<li><a href="SearchMovie.jsp">Search movie </a></li>
+				<li><a href="DeleteMovie.jsp">Delete movie </a></li>
+				<li><a href="UpdateMovie.jsp">Update movie </a></li>
+			</ul>
+		</div>
     </body>
 </html>
