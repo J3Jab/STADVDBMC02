@@ -45,11 +45,13 @@
         <table>
             <tbody>
                 <tr>
+					<td><b>Movie ID</td>
                     <td><b>Movie Name</td>
                     <td><b>Year</td>
                 </tr>
                 <% while (result.next()){ %>
                 <tr>
+					<td><%= result.getString("movie_ID")%></td>
                     <td><%= result.getString("movie_name")%></td>
                     <td><%= result.getString("year")%></td>
                 </tr>
