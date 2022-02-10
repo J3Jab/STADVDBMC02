@@ -5,15 +5,44 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="http://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <title>Display Movies</title>
+		<style>
+			body {
+				font-family: 'Poppins', sans-serif;
+				background: #191919;
+			}
+			
+			table, td, th {  
+			  border: 5px solid #ddd;
+			  text-align: left;
+			  color: white;
+			}
+
+			table {
+			  border-collapse: collapse;
+			  width: 70%;
+			}
+
+			th, td {
+			  padding: 15px;
+			}
+			
+			
+			h1 {
+				color: white;
+				letter-spacing: 5px;
+			}
+		</style>
     </head>
     <body>
-        <h1>Display Movies</h1>
+	<center>
+        <h1>DISPLAY MOVIES</h1>
         <%
             Movie movie = new Movie();
             ResultSet result = movie.getMovies();
         %>
-        <table border="1">
+        <table>
             <tbody>
                 <tr>
                     <td><b>Movie Name</td>
@@ -27,6 +56,7 @@
                 <% } %>
             </tbody>
         </table>
-             <a href="mainmenu.html">Back</a>
+             <br><a href="mainmenu.html">Back</a>
+	<center>
     </body>
 </html>
